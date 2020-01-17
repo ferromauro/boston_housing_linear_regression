@@ -48,10 +48,7 @@ model.add(layer)                                                  # Aggiungiamo 
 model.compile( optimizer = 'sgd', loss = 'mean_squared_error' )   # Assegniamo ottimizzatore e funzione di costo          
 
 # Ora che abbiamo impostato il modello procediamo con il suo addestramento
-model.fit(X_train, y_train, epochs = 100)   
-
-# Ora che abbiamo impostato il modello procediamo con il suo addestramento
-model.fit(X_train, y_train, epochs = 100)   
+model.fit(X_train, y_train, epochs = 100)    
 
 # Andiamo a conoscere i pesi della nostra retta di regressione 
 pesi = model.get_weights()
